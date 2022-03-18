@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import config from "./lib/init";
 import fastify, { FastifyInstance } from "fastify-helpers";
 import * as chalk from "chalk";

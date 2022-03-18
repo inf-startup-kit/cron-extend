@@ -11,9 +11,13 @@
 - [Задачи](#jobs)
 - [API](#api)
 
-## <a name="install"></a> Запуск
+## <a name="install"></a> Запуск и установка
 
-пример строки запуска: `node /cron-extend/app.js -c config.toml`
+установка как утилиту: `npm i cron-extend -g`
+
+пример #1 строки запуска: `node /cron-extend/app.js -c config.toml`
+
+пример #2 строки запуска: `cron-extend --config config.toml`
 
 ## <a name="launch"></a> Таблица ключей запуска
 

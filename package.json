@@ -1,9 +1,20 @@
 {
     "name": "cron-extend",
-    "version": "0.2.3",
+    "version": "0.2.6",
     "description": "Cron jobs manager",
     "main": "app.js",
     "docker_image": "samuray/cron-extend",
+    "directories": {
+        "lib": "lib",
+        "http": "http"
+    },
+    "files": [
+        "lib/**/*",
+        "http/**/*"
+    ],
+    "bin": {
+        "cron-extend": "./app.js"
+    },
     "scripts": {
         "up": "ncu --reject ajv && ncu --reject ajv -u && rimraf ./package-lock.json && npm i && ncu --reject ajv",
         "ncu": "ncu --reject ajv",
@@ -17,19 +28,20 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/samurayii/cron-extend.git"
+        "url": "git+https://github.com/inf-startup-kit/cron-extend.git"
     },
     "keywords": [
         "cron",
         "job",
-        "administration"
+        "administration",
+        "automation"
     ],
     "author": "Nuzhnov A.A.",
     "license": "GNU GPLv3",
     "bugs": {
-        "url": "https://github.com/samurayii/cron-extend/issues"
+        "url": "https://github.com/inf-startup-kit/cron-extend/issues"
     },
-    "homepage": "https://github.com/samurayii/cron-extend.git#readme",
+    "homepage": "https://github.com/inf-startup-kit/cron-extend.git#readme",
     "optionalDependencies": {
         "@commitlint/cli": "=16.2.1",
         "@typescript-eslint/eslint-plugin": "=5.12.1",
@@ -81,7 +93,6 @@
         "di-ts-decorators": "^0.2.5",
         "fastify-helpers": "^0.2.6",
         "fastify-small-logger": "^1.8.11",
-        "handlebars": "=4.7.7",
         "https-proxy-agent": "=5.0.0",
         "json-from-default-schema": "^1.0.1",
         "jtomler": "^1.0.1"
