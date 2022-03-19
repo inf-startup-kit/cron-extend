@@ -1,6 +1,6 @@
 {
     "name": "cron-extend",
-    "version": "0.2.6",
+    "version": "0.2.7",
     "description": "Cron jobs manager",
     "main": "app.js",
     "docker_image": "samuray/cron-extend",
@@ -64,6 +64,10 @@
         "build": {
             "rewrite": true,
             "copy": [
+                {
+                    "from": "README.md",
+                    "to": "./dist/README.md"
+                },
                 {
                     "from": "./package-lock.json",
                     "to": "./dist/package-lock.json"
