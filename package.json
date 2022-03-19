@@ -1,6 +1,6 @@
 {
     "name": "cron-extend",
-    "version": "0.2.7",
+    "version": "0.2.8",
     "description": "Cron jobs manager",
     "main": "app.js",
     "docker_image": "samuray/cron-extend",

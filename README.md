@@ -108,7 +108,7 @@
 ```toml
 enable = true                       # активация задачи
 description = "job description"     # описание задачи
-timeout = 60                        # таймаут выполнения в секундах
+timeout = "60s"                     # таймаут выполнения, единицы s,m,h,d (пример: 1m20s)
 tags = []                           # теги для запуска
 cwd = "cwd_folder"                  # рабочая папка
 command = "executer"                # команда запуска
@@ -175,7 +175,7 @@ args = [                            # аргументы
         "enable": false,
         "description": "description job1.yml",
         "command": "empty",
-        "timeout": 60,
+        "timeout": "60s",
         "tags": [],
         "cwd": "C:\\progs\\cron-extend",
         "args": [],
@@ -196,7 +196,7 @@ args = [                            # аргументы
     {
         "enable": true,
         "description": "json job 2",
-        "timeout": 60,
+        "timeout": "60s",
         "tags": [],
         "cwd": "C:\\progs\\cron-extend",
         "command": "1",
