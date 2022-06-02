@@ -9,6 +9,7 @@ RUN npm install --no-optional
 
 COPY src /src
 COPY tsconfig.json /tsconfig.json
+COPY README.md /README.md
 
 RUN npm run build
 
